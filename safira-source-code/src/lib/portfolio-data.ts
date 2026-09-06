@@ -1,10 +1,13 @@
 import heroImage from "@/assets/hero-wedding.jpg";
+import heroVideo from "@/assets/1788715784194142.MP4";
 import goaImage from "@/assets/story-goa.jpg";
 import jaipurImage from "@/assets/story-jaipur.jpg";
 import monsoonImage from "@/assets/story-monsoon.jpg";
 import photographerImage from "@/assets/photographer.jpg";
 
+
 export const images = { heroImage, goaImage, jaipurImage, monsoonImage, photographerImage };
+export const heroVideo = heroVideo;
 
 export const stories = [
   { slug: "aarav-meera", title: "Aarav & Meera", location: "Pune, Maharashtra", category: "Wedding", date: "18 January 2026", image: heroImage, shape: "landscape" },
