@@ -7,7 +7,7 @@ import photographerImage from "@/assets/photographer.jpg";
 
 
 export const images = { heroImage, goaImage, jaipurImage, monsoonImage, photographerImage };
-export const heroVideo = heroVideo;
+export { heroVideo };
 
 export const stories = [
   { slug: "aarav-meera", title: "Aarav & Meera", location: "Pune, Maharashtra", category: "Wedding", date: "18 January 2026", image: heroImage, shape: "landscape" },
