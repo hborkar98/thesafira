@@ -3,7 +3,7 @@ import { useEffect, useState, type FormEvent } from "react";
 import { motion } from "motion/react";
 import { ArrowDown, ArrowUpRight, Menu, Play, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { images, journal, services, stories } from "@/lib/portfolio-data";
+import { images, heroVideo, journal, services, stories } from "@/lib/portfolio-data";
 import { supabase } from "@/integrations/supabase/client";
 
 export const Route = createFileRoute("/")({
@@ -52,7 +52,7 @@ function Home() {
     </div>}
 
     <section id="top" className="relative min-h-[92svh] overflow-hidden bg-ink text-paper">
-      <img src={images.heroImage} alt="Newlyweds sharing a quiet moment in a historic Pune courtyard" className="cinematic-zoom absolute inset-0 h-full w-full object-cover" width={1920} height={1280} fetchPriority="high" />
+      <video src={heroVideo} autoPlay muted loop playsInline preload="auto" poster={images.heroImage} className="cinematic-zoom absolute inset-0 h-full w-full object-cover" />
       <div className="absolute inset-0 bg-ink/35" />
       <div className="relative z-10 flex min-h-[92svh] flex-col justify-end px-6 pb-16 lg:px-12 lg:pb-20">
         <motion.p {...reveal} className="mb-5 text-[10px] uppercase tracking-[0.28em]">Pune · India · Worldwide</motion.p>
