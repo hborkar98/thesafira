@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-paper text-ink font-body antialiased;
+}
+
+::selection {
+  background: #1b1815;
+  color: #f4efe6;
+}
+
+/* Editorial hairline divider used between sections instead of cards/shadows */
+.hairline {
+  border-top: 1px solid theme("colors.mist");
+}
+
+/* Custom cursor dot used on desktop over large imagery (progressive enhancement) */
+.cursor-dot {
+  pointer-events: none;
+  position: fixed;
+  z-index: 60;
+  mix-blend-mode: difference;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
