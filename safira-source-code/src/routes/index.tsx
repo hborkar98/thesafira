@@ -11,7 +11,7 @@ export const Route = createFileRoute("/")({
   head: () => ({ meta: [
     { title: "theSafira | Cinematic Wedding Photographer Pune" },
     { name: "description", content: "Cinematic wedding, couple and destination photography by theSafira, based in Pune and available across India and worldwide." },
-    { property: "og:title", content: "theSafira | Stories worth remembering" },
+    { property: "og:title", content: "theSafira | theSafira" },
     { property: "og:description", content: "Authentic photographs, honest emotions and stories captured wherever life takes you." },
     { property: "og:type", content: "website" },
     { name: "twitter:card", content: "summary_large_image" },
