@@ -108,8 +108,8 @@ function Home() {
                 </span>
               </div>
               <div className="mt-4 flex items-center justify-between border-t border-paper/25 pt-4">
-                <div><h3 className="text-2xl">{film.title}</h3><p className="mt-1 text-[10px] uppercase tracking-[.16em] text-paper/55">{film.location}</p></div>
-                <span className="text-xs text-paper/55">{film.duration}</span>
+                <div><h3 className="text-2xl">{film.title}</h3>{film.location && <p className="mt-1 text-[10px] uppercase tracking-[.16em] text-paper/55">{film.location}</p>}</div>
+                {film.duration && <span className="text-xs text-paper/55">{film.duration}</span>}
               </div>
             </button>
           ))}
@@ -124,7 +124,7 @@ function Home() {
           <div className="aspect-video w-full overflow-hidden bg-black">
             <iframe src={`https://www.youtube.com/embed/${getYouTubeId(activeFilm.youtubeUrl)}?autoplay=1&rel=0`} title={activeFilm.title} allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen className="h-full w-full" />
           </div>
-          <p className="mt-4 text-center text-xs uppercase tracking-[.18em] text-paper/60">{activeFilm.title} · {activeFilm.location} · {activeFilm.duration}</p>
+            <p className="mt-4 text-center text-xs uppercase tracking-[.18em] text-paper/60">{[activeFilm.title, activeFilm.location, activeFilm.duration].filter(Boolean).join(" · ")}</p>
         </div>
       </div>
     )}
