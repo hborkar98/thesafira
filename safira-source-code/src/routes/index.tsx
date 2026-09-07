@@ -11,7 +11,7 @@ export const Route = createFileRoute("/")({
   head: () => ({ meta: [
     { title: "theSafira | Cinematic Wedding Photographer Pune" },
     { name: "description", content: "Cinematic wedding, couple and destination photography by theSafira, based in Pune and available across India and worldwide." },
-    { property: "og:title", content: "theSafira | theSafira" },
+    { property: "og:title", content: "theSafira | Stories worth remembering" },
     { property: "og:description", content: "Authentic photographs, honest emotions and stories captured wherever life takes you." },
     { property: "og:type", content: "website" },
     { name: "twitter:card", content: "summary_large_image" },
@@ -64,7 +64,7 @@ function Home() {
       <div className="absolute inset-0 bg-ink/35" />
       <div className="relative z-10 flex min-h-[92svh] flex-col items-center justify-end px-6 pb-16 text-center lg:px-12 lg:pb-20">
         <motion.p {...reveal} className="mb-5 text-[10px] uppercase tracking-[0.28em]">Pune · India · Worldwide</motion.p>
-        <motion.h1 {...reveal} transition={{ duration: 1, delay: .1 }} className="max-w-5xl text-balance font-display text-[clamp(4rem,10vw,10rem)] leading-[.78]">Stories worth <em>remembering.</em></motion.h1>
+        <motion.h1 {...reveal} transition={{ duration: 1, delay: .1 }} className="max-w-5xl text-balance font-display text-[clamp(4rem,10vw,10rem)] leading-[.78]">theSafira</em></motion.h1>
         <motion.div {...reveal} transition={{ duration: .9, delay: .25 }} className="mt-8 flex flex-col items-center gap-7">
           <p className="max-w-md text-sm leading-7 text-paper/80">Authentic photographs, honest emotions and stories captured wherever life takes you.</p>
           <div className="flex gap-3"><Button asChild variant="editorialOutline" size="editorial"><a href="#stories">Explore stories</a></Button><Button asChild variant="editorial" size="editorial"><a href="#contact">Let's talk</a></Button></div>
