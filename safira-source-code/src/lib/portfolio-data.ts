@@ -17,10 +17,12 @@ export const stories = [
 ] as const;
 
 export const films = [
-  { id: "aarav-meera", title: "Aarav & Meera", location: "Pune, Maharashtra", duration: "04:32", youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", thumbnail: heroImage },
-  { id: "rohan-ananya", title: "Rohan & Ananya", location: "Goa, India", duration: "05:10", youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", thumbnail: goaImage },
-  { id: "aditya-neha", title: "Aditya & Neha", location: "Jaipur, Rajasthan", duration: "03:58", youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", thumbnail: jaipurImage },
-  { id: "monsoon-stories", title: "Monsoon Stories", location: "Western Ghats", duration: "02:47", youtubeUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", thumbnail: monsoonImage },
+  { id: "engagement-highlight", title: "Engagement Highlight", location: "", duration: "", youtubeUrl: "https://youtu.be/K-ezYHvATYc", thumbnail: "https://img.youtube.com/vi/K-ezYHvATYc/hqdefault.jpg" },
+  { id: "rushab & saloni", title: "Rushab & Saloni", location: "", duration: "", youtubeUrl: "https://youtu.be/JGjUm_YsR0M", thumbnail: "https://img.youtube.com/vi/JGjUm_YsR0M/hqdefault.jpg" },
+  { id: "dishank & krutika", title: "Dishank & Krutika", location: "", duration: "", youtubeUrl: "https://youtu.be/MUWL2OXG0W8", thumbnail: "https://img.youtube.com/vi/MUWL2OXG0W8/hqdefault.jpg" },
+  { id: "vrush & parth", title: "Vrush & Parth", location: "", duration: "", youtubeUrl: "https://youtu.be/8cIASeh2X40", thumbnail: "https://img.youtube.com/vi/8cIASeh2X40/hqdefault.jpg" },
+  { id: "riya & kunal", title: "Riya & Kunal", location: "", duration: "", youtubeUrl: "https://youtu.be/kkN4ppIxMHE", thumbnail: "https://img.youtube.com/vi/kkN4ppIxMHE/hqdefault.jpg" },
+  { id: "kumar & dhanashre", title: "Kumar & Dhanashre", location: "", duration: "", youtubeUrl: "https://youtu.be/MdkSox2gX8s", thumbnail: "https://img.youtube.com/vi/MdkSox2gX8s/hqdefault.jpg" },
 ] as const;
 
 export const journal = [
